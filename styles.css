@@ -32,9 +32,11 @@ nav {
     float: right;
 }
 
+/*
 nav a {
     margin-left: 20px;
-}
+} 
+*/
 
 /* Hero Section Styles */
 .hero {

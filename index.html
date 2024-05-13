@@ -1,76 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div>
-        <div class="header">
-            <div class="nav">
-                <h2 class="logo">Header Logo</h2>
-                <ul>
-                    <li>
-                        <a href="#">header link one</a>
-                    </li>
-                    <li>
-                        <a href="#">header link two</a>
-                    </li>
-                    <li>
-                        <a href="#">header link three</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="main">
-                <div class="text">
-                    <h1 class="title">This website is awesome</h1>
-                    <p>
-                        This website has some subtext that goes under the main title. With a smaller font and the color has lower contrast
-                    </p>
-                    <button>Sign up</button>
-                </div>
-                <img src="/images/iceberg-6779681_640 (1).jpg" alt="Iceberg" />
-            </div>
-        </div>
-        <div class="info">
-            <h2 class="info-head">Some random information.</h2>
 
-            <div class="list">
-                <div class="list-item">
-                    <img src="/images/chess-6872239_640.jpg" alt="chess" />
-                    <p class="text">Some random text under an image</p>
-                </div>
-                <div class="list-item">
-                    <img src="/images/cochem-castle-6791148_640.jpg" alt="chess" />
-                    <p class="text">Some random text under an image</p>
-                </div>
-                <div class="list-item">
-                    <img src="/images/guinea-pig-5287747_640.jpg" alt="chess" />
-                    <p class="text">Some random text under an image</p>
-                </div>
-                <div class="list-item">
-                    <img src="/images/prayer-6764197_640.jpg" alt="chess" />
-                    <p class="text">Some random text under an image</p>
-                </div>
-            </div>
-        </div>
-        <div class="quote">
-            <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sit, non rem quasi temporibus eaque et laborum voluptates.
-            </p>
-            <h4>- Thor god of thurnder</h4>
-        </div>
-        <div class="down">
-            <h3 class="text">Call to sign up</h3>
-            <button>Sign up</button>
-        </div>
-        <div class="footer">Copywrite © Odin Project 2022</div>
+<header>
+    <div class="container">
+        <h1>Our E-commerce Store</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </div>
-</body>
+</header>
 
+<section class="hero">
+    <div class="container">
+        <h2>Explore Our Online Store</h2>
+        <p>Welcome to our e-commerce website. Discover a wide range of products at great prices!</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<section id="products" class="features">
+    <div class="container">
+        <h2>Our Featured Products</h2>
+        <div class="product-item">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1 Name</h3>
+            <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+        <div class="product-item">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2 Name</h3>
+            <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+        <div class="product-item">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>Product 3 Name</h3>
+            <p>Description of Product 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Our E-commerce Store. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
 </html>

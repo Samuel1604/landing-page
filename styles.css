@@ -63,6 +63,11 @@ nav a {
     text-decoration: none;
 }
 
+.btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
 /* Features Section Styles */
 .features {
     padding: 80px 0;
@@ -82,44 +87,49 @@ nav a {
     font-size: 24px;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #343a40;
+/* Product Section Styles */
+.product-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.product-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.product-item ul li {
+    font-size: 16px;
+}
+
+.product-item .btn {
+    background-color: #007bff;
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
-footer p {
-    margin: 0;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-    
-    nav {
-        float: none;
-        text-align: center;
-        margin-top: 20px;
-    }
-    
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-    
-    .hero {
-        padding: 80px 0;
-    }
-    
-    .hero h2 {
-        font-size: 28px;
-    }
-    
-    .features {
-        padding: 60px 0;
-    }
+.product-item .btn:hover {
+    background-color: #0056b3;
 }

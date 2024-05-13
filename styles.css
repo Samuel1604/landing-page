@@ -28,11 +28,12 @@ header h1 {
     font-size: 24px;
 }
 
+/*
 nav {
     float: right;
 }
 
-/*
+
 nav a {
     margin-left: 20px;
 } 

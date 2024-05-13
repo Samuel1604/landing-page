@@ -1,153 +1,125 @@
-            body {
-                display: flex;
-                flex-direction: column;
-                margin: 0 auto;
-            }
-            
-            img {
-                max-width: 300px;
-                border-radius: 5px;
-            }
-            /* .container {
-        max-width: 1200px;
-        /* margin: 0 auto; */
-            /* align-self: center; }*/
-            /* .header {
-    /* margin-bottom: 100px; }*/
-            
-            .nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                background-color: #1f2937;
-                padding: 8px 100px 32px;
-            }
-            
-            .logo {
-                font-size: 24px;
-                font-weight: 700;
-                color: #f9f8fa;
-            }
-            
-            ul {
-                display: flex;
-                align-items: center;
-                list-style: none;
-                gap: 12px;
-            }
-            
-            a {
-                text-decoration: none;
-                font-size: 18px;
-                color: #e5e7eb;
-            }
-            
-            .main {
-                display: flex;
-                background-color: #1f2937;
-                justify-content: space-between;
-                align-items: center;
-                padding: 8px 100px 150px 100px;
-            }
-            
-            .text {
-                max-width: 400px;
-            }
-            
-            .title {
-                font-size: 34px;
-                font-weight: 900;
-                color: #f9f8fa;
-            }
-            
-            p {
-                font-size: 18px;
-                color: #e5e7eb;
-            }
-            
-            button {
-                border-radius: 8px;
-                color: #f9f8fa;
-                background-color: #3882f6;
-                padding: 4px 16px;
-                font-size: 18px;
-                font-weight: 500;
-                cursor: pointer;
-            }
-            
-            .info-head {
-                text-align: center;
-                margin-top: 64px;
-                margin-bottom: 64px;
-                font-size: 32px;
-                font-weight: 900;
-                color: #1f2937;
-            }
-            
-            .list {
-                display: flex;
-                padding: 8px 100px 150px;
-                flex-wrap: wrap;
-                margin: 0;
-                gap: 32px;
-                justify-content: center;
-            }
-            
-            .list .text {
-                color: #1f2937;
-                font-size: 18px;
-                flex: 1;
-            }
-            
-            .quote {
-                display: flex;
-                background-color: #e5e7eb;
-                padding: 32px;
-                justify-content: center;
-                margin-bottom: 150px;
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .quote .text {
-                color: #1f2937;
-                text-align: center;
-                font-style: italic;
-                font-size: xx-large;
-                font-weight: lighter;
-                margin-bottom: 0;
-            }
-            
-            .down {
-                display: flex;
-                background-color: #3882f6;
-                max-width: 500px;
-                border-radius: 5px;
-                text-align: center;
-                justify-content: space-between;
-                align-items: center;
-                padding: 8px 22px;
-                margin: 0 auto;
-            }
-            
-            .down .text {
-                color: #e5e7eb;
-                font-size: 24px;
-                font-weight: 700;
-                margin-left: 30px;
-            }
-            
-            .footer {
-                text-align: center;
-                margin-top: 150px;
-                background-color: #1f2937;
-                font-size: 24px;
-                font-weight: 100;
-                color: #e5e7eb;
-                padding: 24px;
-            }
-            
-            h4 {
-                margin-left: 500px;
-                margin-top: auto;
-            }
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    margin-left: 20px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Features Section Styles */
+.features {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    margin-bottom: 40px;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    nav {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .hero {
+        padding: 80px 0;
+    }
+    
+    .hero h2 {
+        font-size: 28px;
+    }
+    
+    .features {
+        padding: 60px 0;
+    }
+}
